@@ -328,10 +328,17 @@
   padding: 0;
   margin: 100px 0 0;
   /* Add styles */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  gap: 40px;
 }
 
 .step {
   /* Add styles */
+  flex-basis: auto;
+  max-width: 220px;
 }
 
 .step__title {
