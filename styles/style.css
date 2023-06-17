@@ -435,8 +435,7 @@
 }
 
 .footer__logo {
-  max-width: 80px;
-  max-height: 57px;
+  width: 153px;
 }
 
 .footer__list {
@@ -461,7 +460,7 @@
 }
 
 .footer__column-link {
-  color: #c1c1c1;
+  color: white;
   font-size: 16px;
   line-height: 20px;
   text-decoration: none;
@@ -469,9 +468,14 @@
   align-items: center;
 }
 
+.footer__column-link:hover {
+  color: #c1c1c1;
+}
+
 .footer__social-icon {
   max-height: 16px;
   max-width: 16px;
+  margin-right: 10px;
 }
 
 .footer__copyright {
