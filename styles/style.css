@@ -19,7 +19,6 @@
 }
 
 .nav {
-  /* Add flex properties here */
   display: flex;
   justify-content: space-between;
   margin-bottom: 150px;
@@ -32,13 +31,16 @@
 }
 
 .nav__links {
-  /* Reset default list styles here */
   margin: 8px 0 0;
   display: flex;
   column-gap: 20px;
   list-style-type: none;
   padding: 0;
   align-items: center;
+}
+
+.nav__link:hover {
+  color: #1f69c9;
 }
 
 .nav__link {
@@ -83,6 +85,10 @@
 .header__link {
   color: #2f80ed;
   text-decoration: none;
+}
+
+.header__link:hover {
+  color: #1f69c9;
 }
 
 .header__address {
@@ -162,6 +168,10 @@
   text-decoration: none;
 }
 
+.events__more:hover {
+  color: #1f69c9
+}
+
 .events__cover {
   flex-grow: 1;
   flex-shrink: 0;
@@ -183,31 +193,26 @@
 }
 
 .person_name_feynman {
-  /* Use correct values of top/right/bottom/left properties to position the element */
   top: -30px;
   left: 319px;
 }
 
 .person_name_burbidge {
-  /* Use correct values of top/right/bottom/left properties to position the element */
   top: 96px;
   right: 125px;
 }
 
 .person_name_cannon {
-  /* Use correct values of top/right/bottom/left properties to position the element */
   right: 216px;
   bottom: 18px;
 }
 
 .person_name_mitchell {
-  /* Use correct values of top/right/bottom/left properties to position the element */
   left: 142px;
   bottom: 82px;
 }
 
 .person_name_tarter {
-  /* Use correct values of top/right/bottom/left properties to position the element */
   top: 79px;
   left: 159px;
 }
@@ -247,6 +252,7 @@
   font-size: 44px;
   line-height: 52px;
   margin: 0 0 24px;
+  color: white;
 }
 
 .staff__subtitle {
@@ -254,10 +260,10 @@
   font-size: 20px;
   line-height: 30px;
   font-weight: 400;
-  margin: 0;
+  margin-bottom: 68px;
+  color: white;
 }
 
-/* Add the CSS rule for your new class here. Make sure to place it before .card: parents should precede their children */
 .staff__cards {
   max-width: 760px;
   margin-top: 68px;
@@ -327,7 +333,6 @@
   list-style-type: none;
   padding: 0;
   margin: 100px 0 0;
-  /* Add styles */
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -336,7 +341,6 @@
 }
 
 .step {
-  /* Add styles */
   flex-basis: auto;
   max-width: 220px;
 }
@@ -365,6 +369,7 @@
   overflow: hidden;
   position: relative;
   box-sizing: border-box;
+  display: flex;
 }
 
 .about__title {
@@ -373,6 +378,8 @@
   line-height: 30px;
   font-weight: 500;
   z-index: 1;
+  max-width: 154px;
+  margin-right: 120px;
 }
 
 .about__content {
@@ -382,28 +389,54 @@
   max-width: 660px;
 }
 
+.about__paragraph {
+  margin: auto;
+  margin-bottom: 32px;
+  z-index: 1;
+  position: relative;
+}
+
+.about__paragraph:last-of-type {
+  margin-bottom: 0;
+}
+
 .about__circle {
   background-color: #2f80ed;
   width: 495px;
   height: 495px;
   border-radius: 50%;
+  position: absolute;
+  top: -121px;
+  left: -91px;
+  z-index: 0;
 }
 
 .footer {
   box-sizing: border-box;
   margin-top: auto;
+  background-color: #1f1f1f;
+  color: #fff;
+  padding: 60px 102px 60px 80px;
+  font-size: 16px;
+  line-height: 20px;
 }
 
 .footer__columns {
+  display: flex;
+  justify-content: flex-end;
 }
 
 .footer__column_content_hours {
+  margin-left: auto;
 }
 
 .footer__column_content_social {
+  margin-left: 100px;
 }
 
 .footer__logo {
+  max-width: 80px;
+  max-height: 57px;
 }
 
 .footer__list {
@@ -414,20 +447,33 @@
 }
 
 .footer__list-item {
+  margin-bottom: 16px;
+}
+
+.footer__list-item:last-of-type {
+  margin-bottom: 0;
 }
 
 .footer__column-heading {
+  margin: auto;
+  margin-bottom: 20px;
+  font-size: 16px;
 }
 
 .footer__column-link {
-  color: white;
+  color: #c1c1c1;
   font-size: 16px;
   line-height: 20px;
   text-decoration: none;
+  display: flex;
+  align-items: center;
 }
 
 .footer__social-icon {
+  max-height: 16px;
+  max-width: 16px;
 }
 
 .footer__copyright {
+  margin-top: 108px;
 }
