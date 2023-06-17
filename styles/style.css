@@ -435,7 +435,8 @@
 }
 
 .footer__logo {
-  width: 153px;
+  width: 80px;
+  height: 57px;
 }
 
 .footer__list {
@@ -473,8 +474,8 @@
 }
 
 .footer__social-icon {
-  max-height: 16px;
-  max-width: 16px;
+  height: 16px;
+  width: 16px;
   margin-right: 10px;
 }
 
